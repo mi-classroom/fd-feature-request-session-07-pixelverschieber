@@ -114,6 +114,24 @@
     border-top: 3px solid var(--accent-lighter);
 }
 
+.catcher > *:last-child{
+   margin: -2rem 0 3rem 0;
+}
+
+/* ingredients and nutritional values
+########################################################################### */
+
+@media screen and (max-width: 830px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        gap: var(--m);
+    }
+
+    .grid section:last-child {
+        margin-top: 3rem;
+    }
+}
 
 /* Ingredients
 ############################################################################ */
@@ -363,7 +381,8 @@ form input[type="checkbox"] {
 
 /* stylelint-disable-next-line no-descending-specificity */
 .steps > li{
-    display: block;
+    display: flex;
+    flex-direction: row;
     padding-bottom: var(--xl);
     counter-increment: step-count;
 }
@@ -411,3 +430,15 @@ form input[type="checkbox"] {
     line-height: var(--xl);
 }
 
+@media screen and (max-width: 768px) {
+    .steps > li > figure > img {
+        flex-direction: column;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .steps > li > figure:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+}
