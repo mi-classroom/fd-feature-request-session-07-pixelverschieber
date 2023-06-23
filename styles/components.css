@@ -436,9 +436,17 @@ form input[type="checkbox"] {
         width: 100%;
         flex-basis: 100%;
     }
+    
+    .steps .has-counter {
+        margin-left: 10rem;
+        padding-right: 4.5rem;
+        padding-left: var(--l);
+        width: 100%;
+    }
 
     .steps > li > figure:last-child {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 }
