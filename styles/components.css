@@ -114,6 +114,24 @@
     border-top: 3px solid var(--accent-lighter);
 }
 
+.catcher > *:last-child{
+   margin: -2rem 0 3rem 0;
+}
+
+/*
+########################################################################### */
+
+@media screen and (max-width: 830px) {
+    .grid {
+        flex-direction: column;
+        display: flex;
+        gap: var(--m);
+    }
+
+    .grid section:last-child {
+        margin-top: 3rem;
+    }
+}
 
 /* Ingredients
 ############################################################################ */
