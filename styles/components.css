@@ -82,27 +82,29 @@
 
 /* navbar link highlight */
 .mobile-navbar {
-    position: fixed;
-    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: none;
     width: 100%;
-    height: calc(var(--m) * 2 + var(--l));
 }
 
 .figure-container {
     width: 100vw;
+    padding: var(--m);
+    background: var(--secondary);
 }
 
 .mobile-navbar figure {
     height: 100%;
-    padding: var(--m);
     margin-top: 0;
-    background: var(--secondary);
 }
 
 .mobile-navbar svg {
     height: var(--m);
     float: right;
+    cursor: pointer;
 }
 
 .mobile-navbar nav {
